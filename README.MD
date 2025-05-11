@@ -1,6 +1,6 @@
 # TypeScript Template
 
-A basic TypeScript project template for Node.js applications.
+A basic TypeScript project template for Node.js applications
 
 ## Features
 
