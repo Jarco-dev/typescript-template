@@ -62,12 +62,23 @@ export default defineConfig([
     {
         extends: [perfectionist.configs["recommended-natural"]],
         files: [...extensions.js, ...extensions.ts],
-        plugins: {
-            sorter: perfectionist,
-        },
         rules: {
-            "sorter/sort-classes": "off",
-            "sorter/sort-modules": "off",
+            "perfectionist/sort-classes": "off",
+            "perfectionist/sort-interfaces": [
+                "error",
+                {
+                    partitionByNewLine: true,
+                    type: "natural",
+                },
+            ],
+            "perfectionist/sort-modules": "off",
+            "perfectionist/sort-objects": [
+                "error",
+                {
+                    partitionByNewLine: true,
+                    type: "natural",
+                },
+            ],
         },
     },
     {
