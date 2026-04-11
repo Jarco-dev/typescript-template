@@ -4,9 +4,10 @@
         "module": "nodenext",
         "target": "ES2022",
         "moduleResolution": "node16",
-        "baseUrl": ".",
+        "rootDir": "./src",
         "outDir": "./dist",
         "skipLibCheck": true,
+        "types": ["node"],
 
         // Decorative options
         "sourceMap": true,
